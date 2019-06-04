@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SoC'19 CSE@IITK</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<script>
+$(document).ready(function(){
+  $("#input").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#table tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<body>
+  <div class="container">
+      <div class="jumbotron">
+        <h1>SoC'19 CSE@IITK</h1>
+        <p>Following are the list of students of Y17 batch participating in the 
+        ongoing Summer of Code'19 CSE@IITK.</p>
+        Search for your friends here :-<br><br>
+        Enter name :- <input type="text" name="" id="input" placeholder="Search..">
+      </div>
+  </div>
+    <div class = "container">
+        <table class = "table table-hover table-bordered table-striped" id="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th><b>Roll No.</b></th>
+                    <th><b>Name</b></th>
+                    <th><b>Year</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>170003</td>
+                    <td>Aakarsh Singh</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170010</td>
+                    <td>Aayush Sharma</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170041</td>
+                    <td>Achyut Kumar Verma</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170144</td>
+                    <td>Archit Awasthi</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170250</td>
+                    <td>Dikshant Sachan</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170322</td>
+                    <td>Jayant Kumar Goyal</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170478</td>
+                    <td>Pragyan Pandey</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170499</td>
+                    <td>Pratigya Tomar</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170531</td>
+                    <td>Rahul Rohit</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170576</td>
+                    <td>Ritesh Kumar</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170609</td>
+                    <td>Sajal Chaurasia</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170618</td>
+                    <td>Sameer Kumar Singh</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170707</td>
+                    <td>Snehil Saluja</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170791</td>
+                    <td>Vijit Malik</td>
+                    <td>Y17</td>
+                </tr>
+                <tr>
+                    <td>170817</td>
+                    <td>Yash Maheshwari</td>
+                    <td>Y17</td>
+                </tr>
+                 <tr>
+                    <td>170818</td>
+                    <td>Yash Mittal</td>
+                    <td>Y17</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
